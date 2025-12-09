@@ -1,10 +1,9 @@
 export const API_CONFIG = {
   BASE_URL: process.env.NEXT_PUBLIC_API_URL || 'http://127.0.0.1:5000',
-  
   TIMEOUT: 30000,
   ENDPOINTS: {
-    REVIEW: '/review',
-    HEALTH: '/health',
+    REVIEW: '/api/review',
+    HEALTH: '/api/health',
   },
 } as const;
 
