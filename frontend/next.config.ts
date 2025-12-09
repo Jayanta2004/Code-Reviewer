@@ -2,15 +2,9 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,
-  devIndicators: {
-    appIsrStatus: false,
-    buildActivity: false,
-    buildActivityPosition: 'bottom-right',
-  },
+  // Removed 'devIndicators' to fix Vercel Type Error
   experimental: {
-    turbo: {
-      devIndicators: false,
-    },
+    // keeping turbo config is usually fine, but if it fails next, remove this too
   },
 };
 
